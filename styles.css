@@ -32,6 +32,16 @@ body {
     background: transparent;
     transition: all 0.3s ease;
     z-index: 1000;
+    animation: scroll-transition;
+    animation-timeline: scroll(Y);
+}
+@keyframes scroll-transition{
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: rgba(26, 26, 26, 0.95);
+    }
 }
 .navbar.scrolled {
     background: rgba(26, 26, 26, 0.95);
